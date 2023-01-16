@@ -1,0 +1,333 @@
+:root{
+    --primary-text-color: #434455 ;
+    --secondary-text-color: #E7E9FC;
+    --light-text-color: #F4F4FD;
+    --primary-title-color: #2E2F42;
+    --brand-color: #4D5AE5;
+    --accent-color: #404BBF;
+    --primary-background-color: #FFFFFF;
+    --light-background-color: #E5E5E5; 
+    --main-gap: 24px; 
+}
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    ul,ol{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+    }
+body{
+    font-family: 'Roboto',sans-serif ;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+}
+/* ===========components=========== */
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+.container{
+max-width: 1158px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+
+}
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;  
+}
+.logo-brand{
+    color: var(--brand-color);
+    }
+    .btn{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .title{
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    }
+.subtitle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.text{
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+/* ==============Header========== */
+.page-header{
+    border-bottom: 1px solid var(--secondary-text-color);
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    
+}
+.page-nav{
+    display: flex;
+    align-items: center;
+} 
+.contact-list{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.header-logo{
+    margin-right: 76px;
+    padding-top: 26px;
+    padding-bottom: 24px;
+color: var(--primary-title-color);
+}
+.menu-item{
+    
+}
+
+.menu-link{
+    display: block;
+    padding-top: 26px;
+    padding-bottom: 24px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--primary-title-color);
+
+}
+.menu-link:hover,
+.menu-link:focus{
+    color: var(--accent-color);
+}
+.menu-item:not(:last-child){
+margin-right: 40px;   
+}
+.contact-list .link{
+display: block;
+padding-top: 26px ;
+padding-bottom: 24px;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
+}
+.contact-list .link:hover,
+.contact-list .link:focus{
+    color: var(--accent-color);
+}
+.contact-tel{
+    margin-left: 40px;
+}
+/* =================Hero=============== */
+.hero{
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+    background-color: var(--primary-title-color);
+}
+.main-title{
+    max-width: 500px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--primary-background-color);
+}
+.order-btn{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: none;
+    color: var(--primary-background-color);
+    background-color: var(--brand-color);
+}
+.order-btn:hover,
+.order-btn:focus{
+background-color: var(--accent-color);
+}
+
+/* ================Our features========= */
+.visually-hidden{
+    position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+.features-list{
+    display: flex;
+    gap: var(--main-gap);
+}
+.features-list > .item{
+    flex-basis:calc((100% - 3 * 24px) / 4) ;
+}
+.features-subtitle{
+    margin-bottom: 8px;
+    color: var(--primary-title-color);
+}
+
+
+/* ===============What are we doing========== */
+.section-work{
+    padding-top: 0;
+}
+.work-title{
+    margin-bottom: 72px;
+    text-align: center;
+    color: var(--primary-title-color); 
+}
+.work-list{
+    display: flex;
+    gap: var(--main-gap);
+}
+.work-item{
+    flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+/* =============Our team=============== */
+.section-team{
+    background-color: var(--light-background-color);
+}
+
+.team-title{
+    margin-bottom: 72px;
+    text-align: center;
+    color: var(--primary-title-color);
+}
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--main-gap);
+}
+.team-member{
+    flex-basis:calc((100% - 3 * 24px) / 4) ;
+    background-color: var(--primary-background-color);
+}
+.team-description{
+padding: 32px 16px 32px 16px;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px; 
+} 
+
+.team-subtitle{
+    margin-bottom: 8px;
+    text-align: center;
+    color: var(--primary-title-color);
+}
+.team-text{
+    text-align: center;
+}
+
+
+/* ===============Footer================= */
+.footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--primary-title-color);
+}
+.footer-logo{
+    display: block;
+    margin-bottom: 16px;
+color: var(--light-text-color);
+}
+.footer-text {
+    width: 264px;
+color: var(--secondary-text-color) ;
+}
+
+/* ============== Example ============= */
+.portfolio.section{
+padding-top: 96px;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    gap: var(--main-gap);
+    margin-bottom: 72px;
+
+}
+.filter-btn{
+padding-top: 12px;
+padding-bottom: 12px;
+padding-left: 24px;
+padding-right: 24px;  
+border: none;
+color: var(--brand-color);
+background-color: var(--secondary-text-color);
+
+}
+.filter-btn:hover,
+.filter-btn:focus{
+    color: var(--primary-background-color);
+    background-color: var(--brand-color);
+}
+.example-list{
+    display: flex;
+    flex-wrap: wrap;
+row-gap: 48px;
+column-gap: var(--main-gap);
+}
+.example-item{
+    flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+.example-description{
+padding-top: 32px;
+padding-bottom: 32px;
+padding-left: 16px;
+border: 1px solid var(--secondary-text-color);
+border-top: none;
+}
+
+.example-subtitle{
+    margin-bottom: 8px;
+    color: var(--primary-title-color);
+}
+
+
+
+
+
+
