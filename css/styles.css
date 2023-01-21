@@ -345,6 +345,7 @@ background-color: var(--accent-color);
     align-items: center;
     width: 100%;
     height:100%
+    
 }
 
 .custemers-link:hover,
@@ -361,7 +362,7 @@ background-color: var(--accent-color);
 
 
 .custemers-icon {
-    fill:var(--client-color);
+    fill :var(--client-color);    
 }
 
 /* ===============Footer================= */
