@@ -10,6 +10,7 @@
     --main-gap: 24px; 
     --client-color: #8E8F99;
     --footer-accent-color: #31D0AA;
+    --hero-gra: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) ;
 
 
 }
@@ -161,11 +162,12 @@ color: var(--primary-text-color);
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
-    background-image: linear-gradient( rgba(46, 47, 66, 0.7)  rgba(46, 47, 66, 0.7)),
-    url(../images/bg-hero.jpg);
+    background-image:var(--hero-gra), url(../images/bg-hero.jpg);
     background-size: cover;
-    background-color: #303030;
+    background-color: #303030; 
     max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-title{
     max-width: 500px;
