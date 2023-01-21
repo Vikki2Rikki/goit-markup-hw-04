@@ -413,7 +413,6 @@ margin-bottom: 16px;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    fill: var(--light-text-color);
 
 }
 
@@ -422,7 +421,8 @@ margin-bottom: 16px;
 background-color : var(--footer-accent-color);
 } 
 .soc-wrap-icon {
-    
+fill: var(--light-text-color); 
+
 }
 
 /* ============== Example ============= */
