@@ -216,14 +216,22 @@ overflow: hidden;
 }
 .features-list > .item{
     flex-basis:calc((100% - 3 * 24px) / 4) ;
-    background-color: var(--secondary-background-color);
     
 }
-.features-img{
-    width: 100%;
+.features-icons{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--secondary-background-color);
+}
+.features-img{
+
+    
+    
+
 }
 
 .features-subtitle{
